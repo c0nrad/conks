@@ -1,0 +1,20 @@
+doctype 5
+html(lang="en")
+  head
+    title= Conks
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js")
+    script(src="js/constants.js")
+    script(src="js/player.js")
+    script(src="js/monsters.js")
+    script(src="js/bullets.js")
+    script(src="js/round.js")
+    script(src="js/conks.js")
+    link(rel='stylesheet', href='css/conks.css')
+
+  body
+    h1 Conks
+    canvas#gameCanvas(height="500", width="500")
+    p Move [Arrow Keys] | Shoot - [Spacebar] | Toggle Sound - [s] | Skip Level - [n]
+    audio#laserSound(src='audio/laser.wav', preload)
